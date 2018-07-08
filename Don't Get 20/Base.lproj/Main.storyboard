@@ -171,20 +171,32 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-yl-tCL">
-                                <rect key="frame" x="42.5" y="230" width="30" height="30"/>
+                                <rect key="frame" x="52.5" y="230" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorOneClicked:" destination="w4J-my-uks" eventType="touchUpInside" id="8kU-Hq-N4o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-ap-QbB">
-                                <rect key="frame" x="122.5" y="230" width="30" height="30"/>
+                                <rect key="frame" x="132.5" y="230" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorTwoClicked:" destination="w4J-my-uks" eventType="touchUpInside" id="yV8-CE-5R3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d7-xY-hJE">
-                                <rect key="frame" x="202.5" y="230" width="30" height="30"/>
+                                <rect key="frame" x="212.5" y="230" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorThreeClicked:" destination="w4J-my-uks" eventType="touchUpInside" id="5kX-ff-EK6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkx-Tb-Z2V">
-                                <rect key="frame" x="282.5" y="230" width="30" height="30"/>
+                                <rect key="frame" x="292.5" y="230" width="30" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorFourClicked:" destination="w4J-my-uks" eventType="touchUpInside" id="aqk-1b-BPb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgU-Zs-FbF">
                                 <rect key="frame" x="119.5" y="338" width="36" height="36"/>
@@ -240,11 +252,11 @@
                             <constraint firstItem="FDO-Id-ZGq" firstAttribute="top" secondItem="XDl-1Z-HFc" secondAttribute="bottom" constant="8" id="Zju-o1-7Ch"/>
                             <constraint firstItem="mT5-ap-QbB" firstAttribute="leading" secondItem="jcF-yl-tCL" secondAttribute="trailing" constant="50" id="cHP-Sx-7my"/>
                             <constraint firstItem="2d7-xY-hJE" firstAttribute="leading" secondItem="mT5-ap-QbB" secondAttribute="trailing" constant="50" id="dMX-cB-VqN"/>
-                            <constraint firstItem="mT5-ap-QbB" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" constant="-50" id="etA-49-3Bg"/>
                             <constraint firstItem="elr-Fq-r2k" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" id="g9h-nY-iUF"/>
                             <constraint firstItem="4SV-0n-OjZ" firstAttribute="top" secondItem="OY4-Vl-Auk" secondAttribute="bottom" constant="25" id="iRN-Lj-uLr"/>
                             <constraint firstItem="qgU-Zs-FbF" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" constant="-50" id="kMI-0c-89H"/>
                             <constraint firstItem="WTd-tE-lOY" firstAttribute="trailing" secondItem="jwr-q8-5xM" secondAttribute="trailing" id="kp6-Of-PoZ"/>
+                            <constraint firstItem="2d7-xY-hJE" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" constant="40" id="nYI-n1-ngL"/>
                             <constraint firstItem="FDO-Id-ZGq" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" id="oO0-1Q-X9o"/>
                             <constraint firstItem="4SV-0n-OjZ" firstAttribute="centerX" secondItem="4Xd-hZ-mOZ" secondAttribute="centerX" id="p33-IK-t60"/>
                             <constraint firstItem="elr-Fq-r2k" firstAttribute="top" secondItem="0UW-zT-5xP" secondAttribute="bottom" constant="25" id="rS5-vB-rdP"/>
