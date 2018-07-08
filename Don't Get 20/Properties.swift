@@ -11,7 +11,9 @@ import UIKit
 class Properties: UIViewController {
     
     var backgroundcolor = UIColor.red
-    
+    var name1 = ""
+    var name2 = ""
+    var dontReach = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()

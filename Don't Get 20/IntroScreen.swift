@@ -19,6 +19,7 @@ class IntroScreen: UIViewController {
     @IBOutlet weak var dontReachNumber: UILabel!
     var there = true
     var props = Properties()
+    var data = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,11 +87,17 @@ class IntroScreen: UIViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let dvc = segue.destination as! ViewController
-//
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! ViewController
+        dvc.props.backgroundcolor = self.view.backgroundColor!
+        dvc.props.name1 = playerOneName.text!
+        dvc.props.name2 = playerTwoName.text!
+        dvc.props.dontReach = Int(dontReachNumber.text!)!
+        
+        
+
+
+    }
     
 
 }
